@@ -314,7 +314,11 @@ iframe {
   display: flex;
   flex-direction: column;
   width: 12rem;
-  background-color: rgb(85, 80, 80);
+  background: radial-gradient(
+    circle,
+    rgba(130, 128, 124, 1) 0%,
+    rgba(29, 29, 28, 1) 100%
+  );
   border-radius: 16px;
   padding: 10px;
   margin: 0.5rem;
