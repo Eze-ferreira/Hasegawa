@@ -364,6 +364,11 @@ iframe {
 .title-small{
   display: none;
 }
+#carouselExampleIndicators{
+  height: 11rem;
+  margin: auto;
+  padding: 1000px auto;
+}
 
 
 
