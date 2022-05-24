@@ -1,110 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
-
-    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/style.css" />
     <title>reviews</title>
-</head>
-<body>
-    <header class="formula">
-        <nav>
-            <ul class="navbar">
-                <li>
-                     <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="mangas.html">Mangas</a>
-                </li>
-                <li>
-                    <a href="recomendaciones.html">Recomendaciones</a>
-                </li>
-                <li>
-                    <a href="reviews.html" class="navlink-seleccionado">Reviews</a>
-                </li>
-                <li>
-                    <a href="community tops.html">Community Tops</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            
-        </nav>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg- colorsiño">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Hasegawa</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="../index.html"
+                >Inicio</a
+              >
+              <a class="nav-link text-white" href="recomendaciones.html"
+                >Recomendaciones</a
+              >
+              <a class="nav-link text-white" href="mangas.html">Mangas</a>
+              <a class="nav-link text-white" href="reviews.html">Reviews</a>
+              <a class="nav-link text-white" href="community tops.html"
+                >Community Tops</a
+              >
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <!-- Me enojé :) suerte Ezequiel del futuro intentando hacer andar esto -->
-   <!--  <section>
-        <h1>ESTO SE ME VIVE BUGEANDO</h1>
-    <div class="carrusel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://dummyimage.com/600x400/000/fff" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://dummyimage.com/600x400/000/fff" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    
-          </div>
-          <div class="carrusel2">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="https://dummyimage.com/600x400/000/fff" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://dummyimage.com/600x400/000/fff" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-
-          </div>
-     </section> -->
-
-    </div>
 
     <footer class="footersiano">
-        <h3>Tienda dedicada a la comunidad manga/anime.</h3>
-        <h4>Abiertos de 09:00 a 19:30 de Lunes a Sabados.</h4>
-        <h4>Maldonado, San Carlos, Uruguay.</h4>
-        <h4>Instagram Facebook Gmail.</h4>
-        </footer>
-        
-
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+      <h3>Tienda dedicada a la comunidad manga/anime.</h3>
+      <h4>Abiertos de 09:00 a 19:30 de Lunes a Sabados.</h4>
+      <h4>Maldonado, San Carlos, Uruguay.</h4>
+      <h4>Instagram Facebook Gmail.</h4>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
 </html>

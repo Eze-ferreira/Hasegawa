@@ -1,64 +1,47 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
 * {
   padding: 0;
   margin: 0;
 }
-
-.icononav {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.icononav{
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: start;
   height: 50px;
 }
 
 body {
-  background: #fa9b1e;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fa9b1e), to(#b3560f));
-  background: linear-gradient(0deg, #fa9b1e 0%, #b3560f 100%);
+  background: rgb(250, 155, 30);
+  background: linear-gradient(
+    0deg,
+    rgba(250, 155, 30, 1) 0%,
+    rgba(179, 86, 15, 1) 100%
+  );
 }
 
 ul li {
   list-style-type: none;
 }
-
 .principal {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .titulos {
   border: 2px solid black;
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .titulo0 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 1.25rem;
 }
-
 .texto1 {
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   color: aliceblue;
   font-size: 3.125rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -66,13 +49,10 @@ ul li {
   border-radius: 2.25rem;
   padding: 0.313rem 0.938rem;
 }
-
 .texto2 {
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   color: aliceblue;
   border-radius: 2.25rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: auto;
@@ -81,7 +61,7 @@ ul li {
 }
 
 .texto3 {
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   color: aliceblue;
   border-radius: 2.25rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -96,48 +76,36 @@ p {
 }
 
 .tituloSegundo {
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   color: aliceblue;
   border-radius: 0.625rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   margin: auto;
   border-radius: 2.25rem;
   padding: 0.313rem 0.938rem;
 }
-
 .multimedia {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .multimediaContainer {
   text-align: center;
   padding: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 main section div .vidTitulo {
   color: black;
   font-size: 4.063rem;
 }
-
 main section div .description {
   font-size: 1.875rem;
 }
 
 footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   padding: 15px;
 }
 
@@ -151,241 +119,163 @@ iframe {
 
 .navlink-seleccionado {
   font-weight: bold;
-  color: linear-gradient(0deg, #fa9b1e 0%, #b3560f 100%);
-  color: #ca590d;
+  color: linear-gradient(
+    0deg,
+    rgba(250, 155, 30, 1) 0%,
+    rgba(179, 86, 15, 1) 100%
+  );
+  color: rgb(202, 89, 13);
 }
 
 /* Recomendaciones */
 .recomendTitle {
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   color: aliceblue;
   border-radius: 2.25rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0.625rem auto;
   border-radius: 2.25rem;
   padding: 0.313rem 0.938rem;
 }
-
 .animeRecomend1 {
   text-align: center;
   padding: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   grid-area: kimetsu;
 }
-
 .animeRecomend2 {
   text-align: center;
   padding: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   grid-area: haikyuu;
 }
-
 .mangaRecomend1 {
   text-align: center;
   padding: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   grid-area: berserk;
 }
-
 .mangaRecomend2 {
   text-align: center;
   padding: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   grid-area: shuumatsu;
 }
-
 .recTitulo1 {
   font-family: "PT Sans", sans-serif;
   font-size: 4.063rem;
 }
-
 .recTitulo2 {
   font-family: "PT Sans", sans-serif;
   font-size: 2.063rem;
 }
-
 .animeDescription {
   color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.063rem;
   margin: 2.25rem auto;
 }
-
 .recTitulo3 {
   font-family: "PT Sans", sans-serif;
   font-size: 4.063rem;
 }
-
 .recTitulo4 {
   font-family: "PT Sans", sans-serif;
   font-size: 2.063rem;
 }
-
 .mangaDescription {
   color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 2.25rem auto;
   font-size: 2.063rem;
 }
-
 .recImg {
   height: 400px;
   width: 500px;
   margin-top: 10px auto;
 }
-
 .recomendContainer {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 18rem 18rem;
-      grid-template-rows: 18rem 18rem;
-  -ms-grid-columns: 14rem 14rem 14rem 14rem;
-      grid-template-columns: 14rem 14rem 14rem 14rem;
+  grid-template-rows: 18rem 18rem;
+  grid-template-columns: 14rem 14rem 14rem 14rem;
   margin: 0 auto;
   height: 100vh;
   margin-top: 80px;
   gap: 20px;
-}
 
+}
 .recomend-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 12rem;
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   border-radius: 16px;
   padding: 10px;
   margin: 0.5rem;
 }
-
 .recomend-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 12rem;
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   border-radius: 16px;
   padding: 10px;
   margin: 0.5rem;
 }
-
 .recomend-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 12rem;
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   border-radius: 16px;
   padding: 10px;
   margin: 0.5rem;
 }
-
 .recomend-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 12rem;
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   border-radius: 16px;
   padding: 10px;
   margin: 0.5rem;
 }
-
 .recomend-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 12rem;
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   border-radius: 16px;
   padding: 10px;
   margin: 0.5rem;
 }
-
 .recomend-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 12rem;
-  background-color: #555050;
+  background-color: rgb(85, 80, 80);
   border-radius: 16px;
   padding: 10px;
   margin: 0.5rem;
 }
-
 .recomend-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 12rem;
-  background: radial-gradient(circle, #82807c 0%, #1d1d1c 100%);
+  background: radial-gradient(
+    circle,
+    rgba(130, 128, 124, 1) 0%,
+    rgba(29, 29, 28, 1) 100%
+  );
   border-radius: 16px;
   padding: 10px;
   margin: 0.5rem;
@@ -397,17 +287,12 @@ iframe {
   padding: 1px;
   margin: 3px auto;
 }
-
 .recomend-card:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
-
 .recomend-card {
-  -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .recomend-card-description {
@@ -419,18 +304,11 @@ iframe {
   color: black;
   font-weight: bold;
 }
-
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 1rem;
 }
-
 .recomenda-title {
   background: black;
   color: aliceblue;
@@ -440,28 +318,26 @@ iframe {
   border-radius: 2.25rem;
   padding: 0.313rem 0.938rem;
 }
-
 .title-small {
   display: none;
 }
-
 .colorsiño {
-  background: #82807c;
-  background: radial-gradient(circle, #82807c 0%, #1d1d1c 100%);
+  background: rgb(130, 128, 124);
+  background: radial-gradient(
+    circle,
+    rgba(130, 128, 124, 1) 0%,
+    rgba(29, 29, 28, 1) 100%
+  );
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .recomendContainer {
-    -ms-grid-columns: 250px 250px;
-        grid-template-columns: 250px 250px;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: auto;
     width: 750px;
     margin: 0 auto;
     gap: 0;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
     height: inherit;
   }
   .recomend-card {
@@ -470,17 +346,14 @@ iframe {
   .recomend-card-img {
     height: 8rem;
   }
+
   .title-small {
     display: inherit;
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin: 1.25rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .title-small > a {
     text-decoration: none;
@@ -488,11 +361,9 @@ iframe {
     font-size: 3.125rem;
     font-family: "PT Sans", sans-serif;
   }
+
   .multimedia {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .texto1 {
     display: none;
@@ -506,6 +377,7 @@ iframe {
     font-size: 20px;
     width: auto;
   }
+
   .principal-image {
     width: 80vw;
     height: auto;
@@ -514,28 +386,21 @@ iframe {
     font-size: 20px;
     width: auto;
   }
-  .icononav {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  .icononav{
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    justify-content: start;
+    
   }
 }
 
 @media only screen and (max-width: 767px) {
   .recomendContainer {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     width: 100vw;
     margin: 0 auto;
     gap: 0;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
     height: inherit;
   }
   .recomend-card {
@@ -544,17 +409,14 @@ iframe {
   .recomend-card-img {
     height: 8rem;
   }
+
   .title-small {
     display: inherit;
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin: 1.25rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .title-small > a {
     text-decoration: none;
@@ -562,20 +424,15 @@ iframe {
     font-size: 3.125rem;
     font-family: "PT Sans", sans-serif;
   }
+ 
   .texto1 {
     font-size: 1.125rem;
   }
   .multimedia {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .multimedia {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .texto1 {
     display: none;
@@ -590,8 +447,8 @@ iframe {
     width: auto;
   }
   .principal-image {
-    height: 20vw;
-    margin: 0 auto;
+     height: 20vw;
+    margin: 0 auto; 
     width: 80vw;
     height: auto;
   }
@@ -603,13 +460,9 @@ iframe {
     width: 80vw;
     height: auto;
   }
-  .icononav {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  .icononav{
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    justify-content: start;
+  
   }
 }
-/*# sourceMappingURL=style.css.map */
