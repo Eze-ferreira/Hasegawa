@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import "generales";
 
 * {
   padding: 0;
@@ -9,38 +10,54 @@
   justify-content: start;
   height: 50px;
 }
-
-body {
-  background: rgb(250, 155, 30);
-  background: linear-gradient(
-    0deg,
-    rgba(250, 155, 30, 1) 0%,
-    rgba(179, 86, 15, 1) 100%
-  );
+.navbarOrder{
+  display: flex;
+  justify-content: end;
 }
 
-ul li {
-  list-style-type: none;
-}
 .principal {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  .titulo0 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1.25rem;
+    .texto1 {
+      background-color: rgb(85, 80, 80);
+      color: aliceblue;
+      font-size: 3.125rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: auto;
+      border-radius: 2.25rem;
+      padding: 0.313rem 0.938rem;
+    }
+    .texto2 {
+      background-color: rgb(85, 80, 80);
+      color: aliceblue;
+      border-radius: 2.25rem;
+      width: max-content;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: auto;
+      border-radius: 2.25rem;
+      padding: 0.313rem 0.938rem;
+    }
+    .texto3 {
+      background-color: rgb(85, 80, 80);
+      color: aliceblue;
+      border-radius: 2.25rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: auto;
+      border-radius: 2.25rem;
+      padding: 0.313rem 0.938rem;
+    }
+  }
+  
 }
-.titulos {
-  border: 2px solid black;
-  background-color: rgb(85, 80, 80);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  justify-content: center;
-}
-.titulo0 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  margin-top: 1.25rem;
-}
-.texto1 {
+
+
+.titulo-recomendaciones {
   background-color: rgb(85, 80, 80);
   color: aliceblue;
   font-size: 3.125rem;
@@ -48,32 +65,13 @@ ul li {
   margin: auto;
   border-radius: 2.25rem;
   padding: 0.313rem 0.938rem;
-}
-.texto2 {
-  background-color: rgb(85, 80, 80);
-  color: aliceblue;
-  border-radius: 2.25rem;
-  width: max-content;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: auto;
-  border-radius: 2.25rem;
-  padding: 0.313rem 0.938rem;
+
 }
 
-.texto3 {
-  background-color: rgb(85, 80, 80);
-  color: aliceblue;
-  border-radius: 2.25rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: auto;
-  border-radius: 2.25rem;
-  padding: 0.313rem 0.938rem;
-}
 
-p {
-  color: black;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+
+
+
 
 .tituloSegundo {
   background-color: rgb(85, 80, 80);
@@ -87,45 +85,21 @@ p {
 }
 .multimedia {
   display: flex;
-}
-.multimediaContainer {
-  text-align: center;
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-}
-
-main section div .vidTitulo {
-  color: black;
-  font-size: 4.063rem;
-}
-main section div .description {
-  font-size: 1.875rem;
-}
-
-footer {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(85, 80, 80);
-  padding: 15px;
+  .multimediaContainer {
+    text-align: center;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    .vidTitulo {
+      color: black;
+      font-size: 4.063rem;
+    }
+    .description {
+      font-size: 1.875rem;
+    }
+  }
 }
 
-figure {
-  margin: auto;
-}
-
-iframe {
-  margin: 10px auto;
-}
-
-.navlink-seleccionado {
-  font-weight: bold;
-  color: linear-gradient(
-    0deg,
-    rgba(250, 155, 30, 1) 0%,
-    rgba(179, 86, 15, 1) 100%
-  );
-  color: rgb(202, 89, 13);
-}
 
 /* Recomendaciones */
 .recomendTitle {
@@ -203,132 +177,79 @@ iframe {
   width: 500px;
   margin-top: 10px auto;
 }
-.recomendContainer {
-  display: grid;
-  grid-template-rows: 18rem 18rem;
-  grid-template-columns: 14rem 14rem 14rem 14rem;
-  margin: 0 auto;
-  height: 100vh;
-  margin-top: 80px;
-  gap: 20px;
 
-}
-.recomend-card {
-  display: flex;
-  flex-direction: column;
-  width: 12rem;
-  background-color: rgb(85, 80, 80);
-  border-radius: 16px;
-  padding: 10px;
-  margin: 0.5rem;
-}
-.recomend-card {
-  display: flex;
-  flex-direction: column;
-  width: 12rem;
-  background-color: rgb(85, 80, 80);
-  border-radius: 16px;
-  padding: 10px;
-  margin: 0.5rem;
-}
-.recomend-card {
-  display: flex;
-  flex-direction: column;
-  width: 12rem;
-  background-color: rgb(85, 80, 80);
-  border-radius: 16px;
-  padding: 10px;
-  margin: 0.5rem;
-}
-.recomend-card {
-  display: flex;
-  flex-direction: column;
-  width: 12rem;
-  background-color: rgb(85, 80, 80);
-  border-radius: 16px;
-  padding: 10px;
-  margin: 0.5rem;
-}
-.recomend-card {
-  display: flex;
-  flex-direction: column;
-  width: 12rem;
-  background-color: rgb(85, 80, 80);
-  border-radius: 16px;
-  padding: 10px;
-  margin: 0.5rem;
-}
-.recomend-card {
-  display: flex;
-  flex-direction: column;
-  width: 12rem;
-  background-color: rgb(85, 80, 80);
-  border-radius: 16px;
-  padding: 10px;
-  margin: 0.5rem;
-}
-.recomend-card {
-  display: flex;
-  flex-direction: column;
-  width: 12rem;
-  background: radial-gradient(
-    circle,
-    rgba(130, 128, 124, 1) 0%,
-    rgba(29, 29, 28, 1) 100%
-  );
-  border-radius: 16px;
-  padding: 10px;
-  margin: 0.5rem;
-}
 
-.recomend-card-img {
-  height: 11rem;
-  border: solid black;
-  padding: 1px;
-  margin: 3px auto;
-}
-.recomend-card:hover {
-  transform: scale(1.2);
-}
-.recomend-card {
-  transition-property: all;
-  transition-duration: 0.5s;
-}
-
-.recomend-card-description {
-  font-size: 12px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: black;
-  font-weight: bold;
-}
 .flex-container {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-}
-.recomenda-title {
-  background: black;
+  
+.titulo-recomendaciones {
+  background-color: rgb(85, 80, 80);
   color: aliceblue;
-  border-radius: 2.25rem;
+  font-size: 3.125rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: auto;
   border-radius: 2.25rem;
   padding: 0.313rem 0.938rem;
+  margin-top: 20px;
 }
-.title-small {
-  display: none;
+  .recomendContainer {
+    display: grid;
+    grid-template-rows: 18rem 18rem;
+    grid-template-columns: 14rem 14rem 14rem 14rem;
+    margin: 0 auto;
+    height: 100vh;
+    margin-top: 50px;
+    gap: 20px;
+    .recomend-card:hover {
+      transform: scale(1.2);
+    }
+    .recomend-card {
+      transition-property: all;
+      transition-duration: 0.5s;
+    }
+    .recomend-card {
+      display: flex;
+      flex-direction: column;
+      width: 12rem;
+      background: radial-gradient(
+        circle,
+        rgba(130, 128, 124, 1) 0%,
+        rgba(29, 29, 28, 1) 100%
+      );
+      border-radius: 16px;
+      padding: 10px;
+      margin: 0.5rem;
+      .recomend-card-img {
+        height: 11rem;
+        border: solid black;
+        padding: 1px;
+        margin: 3px auto;
+      }
+      .recomenda-title {
+        background: black;
+        color: aliceblue;
+        border-radius: 2.25rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: auto;
+        border-radius: 2.25rem;
+        padding: 0.313rem 0.938rem;
+      }
+      .recomend-card-description {
+        font-size: 12px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: black;
+        font-weight: bold;
+      }
+    }
+  
+  }
 }
-.colorsiño {
-  background: rgb(130, 128, 124);
-  background: radial-gradient(
-    circle,
-    rgba(130, 128, 124, 1) 0%,
-    rgba(29, 29, 28, 1) 100%
-  );
-}
+
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .recomendContainer {

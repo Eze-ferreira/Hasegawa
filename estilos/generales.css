@@ -1,0 +1,11 @@
+body {
+  background: #fa9b1e;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fa9b1e), to(#b3560f));
+  background: linear-gradient(0deg, #fa9b1e 0%, #b3560f 100%);
+}
+
+p {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/*# sourceMappingURL=generales.css.map */

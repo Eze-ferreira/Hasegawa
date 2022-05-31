@@ -1,0 +1,36 @@
+body {
+    background: rgb(250, 155, 30);
+    background: linear-gradient(
+      0deg,
+      rgba(250, 155, 30, 1) 0%,
+      rgba(179, 86, 15, 1) 100%
+    );
+  }
+  p {
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  footer {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(85, 80, 80);
+    padding: 15px;
+  }
+  
+  figure {
+    margin: auto;
+  }
+  
+  iframe {
+    margin: 10px auto;
+  }
+  .title-small {
+    display: none;
+  }
+  .colorsiño {
+    background: rgb(130, 128, 124);
+    background: radial-gradient(
+      circle,
+      rgba(130, 128, 124, 1) 0%,
+      rgba(29, 29, 28, 1) 100%
+    );
+  }  

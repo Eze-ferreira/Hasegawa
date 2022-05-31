@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,OAAiB;EAC7B,UAAU,EAAE,+CAIX;CACF;;AACD,AAAA,CAAC,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,+CAA+C;CAC7D",
+    "sources": [
+        "../style/generales.scss"
+    ],
+    "names": [],
+    "file": "generales.css"
+}
