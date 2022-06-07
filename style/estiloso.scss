@@ -1,20 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @import "generales";
+@import "variables";
+@import "operaciones";
 
 * {
   padding: 0;
   margin: 0;
 }
-.icononav{
+$font-sizes: (
+  "small": 10px,
+  "normal": 18px,
+  "large": 50px,
+);
+.cute-white{
+  color: aliceblue;
+}
+
+.icononav {
   display: flex;
   justify-content: start;
-  height: 50px;
+  height: map-get($font-sizes, "large");
 }
-.navbarOrder{
+.navbarOrder {
   display: flex;
   justify-content: end;
 }
-
+@mixin texto {
+  background-color: rgb(85, 80, 80);
+  @extend .cute-white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  border-radius: 2.25rem;
+  padding: 0.313rem 0.938rem;
+}
 .principal {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -25,57 +43,34 @@
     justify-content: center;
     margin-top: 1.25rem;
     .texto1 {
-      background-color: rgb(85, 80, 80);
-      color: aliceblue;
+      @include texto;
       font-size: 3.125rem;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: auto;
-      border-radius: 2.25rem;
-      padding: 0.313rem 0.938rem;
     }
     .texto2 {
-      background-color: rgb(85, 80, 80);
-      color: aliceblue;
+      @include texto;
       border-radius: 2.25rem;
       width: max-content;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: auto;
-      border-radius: 2.25rem;
-      padding: 0.313rem 0.938rem;
     }
     .texto3 {
-      background-color: rgb(85, 80, 80);
-      color: aliceblue;
+      @include texto;
       border-radius: 2.25rem;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: auto;
-      border-radius: 2.25rem;
-      padding: 0.313rem 0.938rem;
     }
   }
-  
 }
-
 
 .titulo-recomendaciones {
   background-color: rgb(85, 80, 80);
-  color: aliceblue;
+  @extend .cute-white;
   font-size: 3.125rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: auto;
   border-radius: 2.25rem;
   padding: 0.313rem 0.938rem;
-
 }
-
-
-
-
-
 
 .tituloSegundo {
   background-color: rgb(85, 80, 80);
-  color: aliceblue;
+  @extend .cute-white;
   border-radius: 0.625rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: max-content;
@@ -100,11 +95,10 @@
   }
 }
 
-
 /* Recomendaciones */
 .recomendTitle {
   background-color: rgb(85, 80, 80);
-  color: aliceblue;
+  @extend .cute-white;
   border-radius: 2.25rem;
   width: max-content;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -175,25 +169,24 @@
 .recImg {
   height: 400px;
   width: 500px;
-  margin-top: 10px auto;
+  margin-top: map-get($font-sizes, $small) auto;
 }
-
 
 .flex-container {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-  
-.titulo-recomendaciones {
-  background-color: rgb(85, 80, 80);
-  color: aliceblue;
-  font-size: 3.125rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: auto;
-  border-radius: 2.25rem;
-  padding: 0.313rem 0.938rem;
-  margin-top: 20px;
-}
+
+  .titulo-recomendaciones {
+    background-color: rgb(85, 80, 80);
+    @extend .cute-white;
+    font-size: 3.125rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    border-radius: 2.25rem;
+    padding: 0.313rem 0.938rem;
+    margin-top: 20px;
+  }
   .recomendContainer {
     display: grid;
     grid-template-rows: 18rem 18rem;
@@ -219,7 +212,7 @@
         rgba(29, 29, 28, 1) 100%
       );
       border-radius: 16px;
-      padding: 10px;
+      padding: map-get($font-sizes, $small);
       margin: 0.5rem;
       .recomend-card-img {
         height: 11rem;
@@ -229,7 +222,7 @@
       }
       .recomenda-title {
         background: black;
-        color: aliceblue;
+        @extend .cute-white;
         border-radius: 2.25rem;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         margin: auto;
@@ -246,10 +239,8 @@
         font-weight: bold;
       }
     }
-  
   }
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .recomendContainer {
@@ -278,7 +269,7 @@
   }
   .title-small > a {
     text-decoration: none;
-    color: aliceblue;
+    @extend .cute-white;
     font-size: 3.125rem;
     font-family: "PT Sans", sans-serif;
   }
@@ -307,10 +298,9 @@
     font-size: 20px;
     width: auto;
   }
-  .icononav{
+  .icononav {
     display: flex;
     justify-content: start;
-    
   }
 }
 
@@ -341,11 +331,11 @@
   }
   .title-small > a {
     text-decoration: none;
-    color: aliceblue;
+    @extend .cute-white;
     font-size: 3.125rem;
     font-family: "PT Sans", sans-serif;
   }
- 
+
   .texto1 {
     font-size: 1.125rem;
   }
@@ -368,8 +358,8 @@
     width: auto;
   }
   .principal-image {
-     height: 20vw;
-    margin: 0 auto; 
+    height: 20vw;
+    margin: 0 auto;
     width: 80vw;
     height: auto;
   }
@@ -381,9 +371,8 @@
     width: 80vw;
     height: auto;
   }
-  .icononav{
+  .icononav {
     display: flex;
     justify-content: start;
-  
   }
 }
