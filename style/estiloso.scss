@@ -7,18 +7,19 @@
   padding: 0;
   margin: 0;
 }
-$font-sizes: (
-  "small": 10px,
-  "normal": 18px,
-  "large": 50px,
+$colors: (
+  "cute-white": aliceblue,
+  "grey":  rgb(85, 80, 80),
+  "normal-white": white,
 );
 
 
 .icononav {
   display: flex;
   justify-content: start;
-  height: map-get($map: $font-sizes, $key: large);
+  height: 50px;
 }
+
 .navbarOrder {
   display: flex;
   justify-content: end;
@@ -172,6 +173,13 @@ $font-sizes: (
   padding: 1px;
   margin: 3px auto;
 }
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+}
 .recomendContainer {
   display: grid;
   grid-template-rows: 18rem 18rem;
@@ -187,13 +195,7 @@ $font-sizes: (
     transition-property: all;
     transition-duration: 0.5s;
   }
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
-  width: fit-content;
-  margin: 0 auto;
-}
+
 }
 .titulo-recomendaciones {
   display: flex;
@@ -217,7 +219,7 @@ $font-sizes: (
     rgba(29, 29, 28, 1) 100%
   );
   border-radius: 16px;
-  padding: map-get($map: $font-sizes, $key: small);
+  padding: 10px;
   margin: 0.5rem;
 }
 .recomenda-title {
@@ -237,6 +239,9 @@ $font-sizes: (
   text-overflow: ellipsis;
   color: black;
   font-weight: bold;
+}
+.redes{
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -305,6 +310,7 @@ $font-sizes: (
     justify-content: start;
   }
 }
+
 
 @media only screen and (max-width: 767px) {
   .recomendContainer {
@@ -380,5 +386,8 @@ $font-sizes: (
   .icononav {
     display: flex;
     justify-content: start;
+  }
+  .titulo-recomendaciones{
+    font-size: 2rem;
   }
 }
