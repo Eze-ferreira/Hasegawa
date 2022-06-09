@@ -12,14 +12,12 @@ $font-sizes: (
   "normal": 18px,
   "large": 50px,
 );
-.cute-white{
-  color: aliceblue;
-}
+
 
 .icononav {
   display: flex;
   justify-content: start;
-  height: map-get($font-sizes, "large");
+  height: map-get($map: $font-sizes, $key: large);
 }
 .navbarOrder {
   display: flex;
@@ -27,10 +25,10 @@ $font-sizes: (
 }
 @mixin texto {
   background-color: rgb(85, 80, 80);
-  @extend .cute-white;
+  color: aliceblue;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: auto;
-  border-radius: 2.25rem;
+  border-radius: 2.30rem;
   padding: 0.313rem 0.938rem;
 }
 .principal {
@@ -49,7 +47,8 @@ $font-sizes: (
     .texto2 {
       @include texto;
       border-radius: 2.25rem;
-      width: max-content;
+      height: auto;
+      width: auto;
     }
     .texto3 {
       @include texto;
@@ -60,7 +59,7 @@ $font-sizes: (
 
 .titulo-recomendaciones {
   background-color: rgb(85, 80, 80);
-  @extend .cute-white;
+  color: aliceblue;
   font-size: 3.125rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: auto;
@@ -70,7 +69,7 @@ $font-sizes: (
 
 .tituloSegundo {
   background-color: rgb(85, 80, 80);
-  @extend .cute-white;
+  color: aliceblue;
   border-radius: 0.625rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: max-content;
@@ -98,7 +97,7 @@ $font-sizes: (
 /* Recomendaciones */
 .recomendTitle {
   background-color: rgb(85, 80, 80);
-  @extend .cute-white;
+  color: aliceblue;
   border-radius: 2.25rem;
   width: max-content;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -166,80 +165,78 @@ $font-sizes: (
   margin: 2.25rem auto;
   font-size: 2.063rem;
 }
-.recImg {
-  height: 400px;
-  width: 500px;
-  margin-top: map-get($font-sizes, $small) auto;
-}
 
+.recomend-card-img {
+  height: 11rem;
+  border: solid black;
+  padding: 1px;
+  margin: 3px auto;
+}
+.recomendContainer {
+  display: grid;
+  grid-template-rows: 18rem 18rem;
+  grid-template-columns: 14rem 14rem 14rem 14rem;
+  margin: 0 auto;
+  height: 100vh;
+  margin-top: 50px;
+  gap: 20px;
+  .recomend-card:hover {
+    transform: scale(1.2);
+  }
+  .recomend-card {
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
 .flex-container {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-
-  .titulo-recomendaciones {
-    background-color: rgb(85, 80, 80);
-    @extend .cute-white;
-    font-size: 3.125rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: auto;
-    border-radius: 2.25rem;
-    padding: 0.313rem 0.938rem;
-    margin-top: 20px;
-  }
-  .recomendContainer {
-    display: grid;
-    grid-template-rows: 18rem 18rem;
-    grid-template-columns: 14rem 14rem 14rem 14rem;
-    margin: 0 auto;
-    height: 100vh;
-    margin-top: 50px;
-    gap: 20px;
-    .recomend-card:hover {
-      transform: scale(1.2);
-    }
-    .recomend-card {
-      transition-property: all;
-      transition-duration: 0.5s;
-    }
-    .recomend-card {
-      display: flex;
-      flex-direction: column;
-      width: 12rem;
-      background: radial-gradient(
-        circle,
-        rgba(130, 128, 124, 1) 0%,
-        rgba(29, 29, 28, 1) 100%
-      );
-      border-radius: 16px;
-      padding: map-get($font-sizes, $small);
-      margin: 0.5rem;
-      .recomend-card-img {
-        height: 11rem;
-        border: solid black;
-        padding: 1px;
-        margin: 3px auto;
-      }
-      .recomenda-title {
-        background: black;
-        @extend .cute-white;
-        border-radius: 2.25rem;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        margin: auto;
-        border-radius: 2.25rem;
-        padding: 0.313rem 0.938rem;
-      }
-      .recomend-card-description {
-        font-size: 12px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        color: black;
-        font-weight: bold;
-      }
-    }
-  }
+  width: fit-content;
+  margin: 0 auto;
+}
+}
+.titulo-recomendaciones {
+  display: flex;
+  align-items: center;
+  background-color: rgb(85, 80, 80);
+  color: aliceblue;
+  font-size: 3.125rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  border-radius: 2.25rem;
+  padding: 0.313rem 0.938rem;
+  margin-top: 20px;
+}
+.recomend-card {
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+  background: radial-gradient(
+    circle,
+    rgba(130, 128, 124, 1) 0%,
+    rgba(29, 29, 28, 1) 100%
+  );
+  border-radius: 16px;
+  padding: map-get($map: $font-sizes, $key: small);
+  margin: 0.5rem;
+}
+.recomenda-title {
+  background: black;
+  color: aliceblue;
+  border-radius: 2.25rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  border-radius: 2.25rem;
+  padding: 0.313rem 0.938rem;
+}
+.recomend-card-description {
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -269,7 +266,7 @@ $font-sizes: (
   }
   .title-small > a {
     text-decoration: none;
-    @extend .cute-white;
+    color: aliceblue;
     font-size: 3.125rem;
     font-family: "PT Sans", sans-serif;
   }
@@ -277,16 +274,20 @@ $font-sizes: (
   .multimedia {
     flex-direction: column;
   }
+  .titulo0{
+    width: auto;
+  }
   .texto1 {
     display: none;
     width: auto;
   }
   .texto2 {
-    font-size: 20px;
+    font-size: 25px;
+    height: auto;
     width: auto;
   }
   .texto3 {
-    font-size: 20px;
+    font-size: 25px;
     width: auto;
   }
 
@@ -295,8 +296,9 @@ $font-sizes: (
     height: auto;
   }
   .tituloSegundo {
-    font-size: 20px;
-    width: auto;
+    font-size: 25px;
+    height: auto;
+    width: auto
   }
   .icononav {
     display: flex;
@@ -331,9 +333,12 @@ $font-sizes: (
   }
   .title-small > a {
     text-decoration: none;
-    @extend .cute-white;
+    color: aliceblue;
     font-size: 3.125rem;
     font-family: "PT Sans", sans-serif;
+  }
+  .titulo0{
+    width: auto;
   }
 
   .texto1 {
@@ -351,6 +356,7 @@ $font-sizes: (
   }
   .texto2 {
     font-size: 16px;
+    height: auto;
     width: auto;
   }
   .texto3 {
