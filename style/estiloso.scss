@@ -241,7 +241,19 @@ $colors: (
   font-weight: bold;
 }
 .redes{
+  display: flex;
+  width: 20vw;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: solid black;
+  padding: 1px;
+  margin: 3px auto;
+}
+.iconos{
+  margin: 10px auto;
   text-decoration: none;
+  color: #212529;
+  font-size: 24px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -308,6 +320,12 @@ $colors: (
   .icononav {
     display: flex;
     justify-content: start;
+  }
+  .redes{
+    width: auto;
+  }
+  .iconos{
+    margin: 5px auto;
   }
 }
 
@@ -389,5 +407,11 @@ $colors: (
   }
   .titulo-recomendaciones{
     font-size: 2rem;
+  }
+  .redes{
+    width: auto;
+  }
+  .iconos{
+    margin: 5px auto;
   }
 }
