@@ -183,9 +183,9 @@ $colors: (
 .recomendContainer {
   display: grid;
   grid-template-rows: 18rem 18rem;
-  grid-template-columns: 14rem 14rem 14rem 14rem;
+  grid-template-columns: 14rem 14rem 14rem 14rem 14rem;
   margin: 0 auto;
-  height: 100vh;
+  height: 75vh;
   margin-top: 50px;
   gap: 20px;
   .recomend-card:hover {
@@ -248,6 +248,7 @@ $colors: (
   border: solid black;
   padding: 1px;
   margin: 3px auto;
+  background-color: rgb(85, 93, 100);
 }
 .iconos{
   margin: 10px auto;
@@ -255,6 +256,49 @@ $colors: (
   color: #212529;
   font-size: 24px;
 }
+/*tienda de mangas*/
+
+.store-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.div-store{
+  display: grid;
+  grid-template-rows: 18rem 18rem;
+  grid-template-columns: 14rem 14rem 14rem 14rem 14rem;
+  margin: 0 auto;
+  height: 75vh;
+  margin-top: 50px;
+  gap: 55px;
+  margin-bottom: 50px;
+}
+.store-items{
+  height: 13rem;
+  border-radius: 60px solid;
+  background-color: #212529;
+
+}
+.store-img{
+  height: 15rem;
+  width: 14rem;
+  border: solid black;
+  padding: 1px;
+  margin: 3px auto;
+}
+.store-items:hover {
+  transform: scale(1.1);
+}
+.store-items{
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+/*reviews */
+
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .recomendContainer {
@@ -326,6 +370,21 @@ $colors: (
   }
   .iconos{
     margin: 5px auto;
+  }
+  .div-store{
+    grid-template-columns: 250px 250px;
+    grid-template-rows: auto;
+    width: 750px;
+    margin: 0 auto;
+    gap: 0;
+    justify-content: space-evenly;
+    height: inherit;
+  }
+  .store-items{
+    margin: 1rem auto;
+  }
+  .store-img{
+    height: 8rem;
   }
 }
 
@@ -413,5 +472,20 @@ $colors: (
   }
   .iconos{
     margin: 5px auto;
+  }
+  .div-store{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100vw;
+    margin: 0 auto;
+    gap: 0;
+    justify-content: space-evenly;
+    height: inherit;
+  }
+  .store-items{
+    margin: 1rem auto;
+  }
+  .store-img{
+    height: 8rem;
   }
 }
