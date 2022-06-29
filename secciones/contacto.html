@@ -66,7 +66,50 @@
   </header>
 
   <body>
-    <div class="d-flex justify-content-center">
+    <section>
+      <article>
+        <article>
+          <div class="formulary-container">
+            <form action="#">
+              <input class="enter-name" type="text" placeholder="Nombre de usuario" /><br />
+              <label class="enter-email" for="email"
+                >Ingrese su email:
+              </label>
+              <input class="email-enter"
+                  type="email"
+                  placeholder="aaa@gmail.com"
+                  name="email"
+                /><br />
+              <img class="contact-img" src="../img/contactimg.jpg" alt="imagen-de-contacto">
+              <label class="enter-observation" for="Observaciones">
+                ¿Que mejorarías de la pagina?:<br />
+              </label>
+              <textarea class="observation-enter" placeholder="¿Que mejorarías?"></textarea>
+              <br />
+              <div class="enter-preferences">
+                <p class="enter-preferencesv2">¿Que te interesa más?:</p>
+              </div>
+              <div class="preferences-selection-anime">
+                Manga
+                <input class="manga-button" type="radio" name="lado" value="Manga" />
+              </div>
+              <div class="preferences-selection-manga">
+                Anime
+                <input class="anime-button" type="radio" name="lado" value="Anime" />
+              </div>
+              <p class="favorite-title">¿Que sección es tu favorita?</p>
+              <select class="selection-section" name="letra" id="letra">
+                <option value="inicio">Inicio</option>
+                <option value="mangas">Mangas</option>
+                <option value="recomendaciones">Recomendaciones</option>
+                <option value="reviews">Reviews</option>
+              </select>
+            </form>
+          </div>
+        </article>
+      </article>
+    </section> 
+   <!--  <div class="d-flex justify-content-center">
       <div class="col-6">
         <div class="mb-3 mt-3">
           <label for="email" class="form-label">Email:</label>
@@ -95,7 +138,7 @@
           </label>
         </div>
       </div>
-    </div>
+    </div> -->
 
   
     <footer class="footersiano">
