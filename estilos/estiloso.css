@@ -476,6 +476,7 @@ iframe {
   padding: 1px auto;
   margin: 3px auto;
   justify-content: center;
+  box-shadow: 10px 10px 5px rgb(99, 98, 98);
 }
 .enter-name {
   display: flex;
